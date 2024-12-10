@@ -1,0 +1,16 @@
+ID,title,Author,ISBN,genre,quantity,Price,Language,total_books,availability,bookphoto,users_ID
+1,The Catcher in the Rye,J.D. Salinger,9780316769488,Coming-of-age,6,479.99,English,20,0,./images/book1.jpg,100
+2,The Great Gatsby,F. Scott Fitzgerald,9780743273565,Fiction,5,315.99,Telugu,30,30,./images/book2.jpg,101
+3,To Kill a Mockingbird,Harper Lee,9780061120084,Fiction,3,412.99,English,40,40,./images/book3.jpg,102
+4,1984,George Orwell,9780451524935,Dystopian,7,510.99,Tamil,20,20,./images/book4.jpg,103
+5,Harry Potter and the Sorcerer's Stone,J.K. Rowling,9780590353427,Fantasy,10,517.99,Kannada,20,20,./images/book4.jpg,104
+6,Pride and Prejudice,Jane Austen,9780141439518,Romance,4,611.99,Hindi,30,30,./images/book1.jpg,105
+7,The Lord of the Rings,J.R.R. Tolkien,9780618640157,Fantasy,8,619.99,English,30,30,./images/book6.jpg,106
+8,The Hobbit,J.R.R. Tolkien,9780547928227,Fantasy,9,416.99,Telugu,40,40,./images/hobbit.jpg,107
+9,The Da Vinci Code,Dan Brown,9780307474278,Thriller,5,213.99,English,40,40,./images/brown.jpg,108
+10,The Hitchhiker's Guide to the Galaxy,Douglas Adams,9780345391803,Science Fiction,3,312.99,English,40,40,./images/galaxy.jpg,109
+11,The Girl with the Dragon Tattoo,Stieg Larsson,9780307454546,Mystery,6,414.99,Telugu,35,35,./images/dragon.jpg,110
+12,The Hunger Games,Suzanne Collins,9780439023481,Dystopian,7,615.99,English,35,35,./images/hunger.jpg,111
+13,Brave New World,Aldous Huxley,9780060850524,Dystopian,4,611.99,Telugu,50,50,./images/brown.jpg,112
+14,The Road,Cormac McCarthy,9780307387899,Dystopian,5,813.99,Tamil,25,25,./images/road.jpg,113
+15,The Shining,Stephen King,9780307743657,Horror,6,214.99,Bengali,10,10,./images/shin.jpg,104

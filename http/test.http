@@ -1,0 +1,14 @@
+GET http://localhost:4004/CentralLibrary/User HTTP/1.1
+
+# POST http://localhost:4004/CentralLibrary/User HTTP/1.1
+# Content-Type: application/json
+
+# {   
+#     "ID": 109,
+#     "Username": "Taylor Subhash",
+#     "email": "subhashtaylor@example.com",
+#     "address": "subhashtaylor@example.com",
+#     "phone_no": "9876543211",
+#     "password": "olivertaylor@123"
+    
+#     }

@@ -1,0 +1,9 @@
+ID,Username,email,address,phone_no,password
+100,John Doe,johndoe@example.com,123 Main St,9555123456,JohnDoe@123
+101,Jane Smith,janesmith@example.com,456 Elm St,1095556789,JaneSmith@123
+102,Alice Johnson,alicejohnson@example.com,789 Oak St,9555901234,AliceJohnson@123
+103,Bob Williams,bobwilliams@example.com,101 Pine St,1095534567,BobWilliams@123
+104,Emily Brown,emilybrown@example.com,202 Maple St,9555789012,emilybrown@@123
+105,Michael Davis,michaeldavis@example.com,303 Cedar St,1095523456,michaeldavis@123
+106,Sophia Wilson,sophiawilson@example.com,404 Birch St,9555678901,sophiawilson@123
+107,Oliver Taylor,olivertaylor@example.com,505 Walnut St,1095501234,olivertaylor@123

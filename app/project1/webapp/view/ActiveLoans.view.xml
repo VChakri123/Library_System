@@ -1,0 +1,138 @@
+<mvc:View
+    controllerName="com.app.project1.controller.ActiveLoans"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <Page
+        id="idactiveloans"
+        title="Active Loans Page"
+    >
+        <Table
+            id="idUserLoansAL"
+            items="{/ActiveLoans}"
+            alternateRowColors="true"
+            backgroundDesign="Transparent"
+            growing="true"
+            growingThreshold="5"
+            mode="MultiSelect"
+            class="classactiveloan"
+        >
+            <headerToolbar>
+                <OverflowToolbar id="idBookTableHeaderAL">
+                    <Title
+                        id="idTableHeaderTitleAL"
+                        text="Active Loans"
+                    />
+                    <ToolbarSpacer id="idTableHeaderSpacer1AL" />
+                     <Button
+                        id="idButhistory"
+                        icon="sap-icon://customer-history"
+                        tooltip="History"
+                        type="Emphasized"
+                        press="onpresshistory"
+                    />
+                    <Button
+                        id="idBtnClose"
+                        icon="sap-icon://decline"
+                        tooltip="close"
+                        type="Negative"
+                        text="Close Loan"
+                        press="onpresscloseLoan"
+                    />
+                    <Button
+                        id="idBtnback"
+                        icon="sap-icon://nav-back"
+                        tooltip="back"
+                        type="Emphasized"
+                        press="onpressBack"
+                    />
+                </OverflowToolbar>
+            </headerToolbar>
+            <columns>
+                <Column id="idISBNColumn">
+                    <Title
+                        id="idISBNtitle"
+                        text="ISBN"
+                    />
+                </Column>
+                <Column id="idtitleColumn">
+                    <Title
+                        id="idBooktitletitle"
+                        text="Title"
+                    />
+                </Column>
+                <Column id="idUserColumn">
+                    <Title
+                        id="idUsertitle"
+                        text="UserID"
+                    />
+                </Column>
+                <Column id="idBooksidColumn">
+                    <Title
+                        id="idBooksidtitle"
+                        text="Books_id"
+                    />
+                </Column>
+
+                <Column id="idIssueColumn">
+                    <Title
+                        id="idIssuetitle"
+                        text="Issue date"
+                    />
+                </Column>
+                <Column id="idDueDateColumn">
+                    <Title
+                        id="idDuedatetitle"
+                        text="Due Date"
+                    />
+                </Column>
+                <Column
+                    id="idAvailColumn"
+                    visible="false"
+                >
+                    <Title
+                        id="idAvailbility"
+                        text="availability"
+                    />
+                </Column>
+            </columns>
+
+            <items>
+                <ColumnListItem id="idColumnListUserLoan">
+                    <cells>
+                        <Text
+                            id="idLoanIdvalue"
+                            text="{books/ISBN}"
+                        />
+                        <Text
+                            id="idBOOKTILTEvalue"
+                            text="{books/title}"
+                        />
+                        <Text
+                            id="idUserIdvalueText"
+                            text="{users_ID}"
+                        />
+                        <Text
+                            id="idbooksIdvalue"
+                            text="{books_ID}"
+                        />
+                        <Text
+                            id="idIssusedatevalue"
+                            text="{issuseDate}"
+                        />
+                        <Text
+                            id="idduedatevalue"
+                            text="{DueDate}"
+                        />
+                        <Text
+                            id="idavailabilityvalue"
+                            text="{books/availability}"
+                        />
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>

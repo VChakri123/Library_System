@@ -1,0 +1,74 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form"
+    xmlns="sap.m"
+>
+    <Dialog
+        id="idlogin"
+        class="loginclass"
+        resizable="true"
+        draggable="true"
+        contentWidth="30%"
+        title="Central Library Admin Page"
+    >
+        <beginButton>
+            <Button
+                id="idBtnCreate1"
+                text="Login"
+                press="onLogin"
+                type="Success"
+            
+            />
+        </beginButton>
+        <endButton>
+            <Button
+                id="idCancelButton1"
+                text="Cancel"
+                press="onCloseDialog"
+                type="Negative"
+            
+            />
+        </endButton>
+        <content>
+            <form:SimpleForm
+                id="idloginForm"
+                class="loginclass"
+                editable="true"
+                layout="ResponsiveGridLayout"
+                labelSpanXL="3"
+                labelSpanL="3"
+                labelSpanM="3"
+                labelSpanS="12"
+                adjustLabelSpan="false"
+                emptySpanXL="4"
+                emptySpanL="4"
+                emptySpanM="4"
+                emptySpanS="0"
+                columnsXL="1"
+                columnsL="1"
+                columnsM="1"
+                singleContainerFullSize="false"
+            >
+                <Label
+                    id="_IDGenLabel1"
+                    text="User ID"
+                />
+                <Input
+                    id="idLogin"
+                    placeholder="Enter User Name"
+                    value=""
+                />
+                <Label
+                    id="_IDGenLabel2"
+                    text="Password"
+                />
+                <Input
+                    id="idPassword"
+                    placeholder="Enter Your Password"
+                    value=""
+                    type="Password"
+                />
+            </form:SimpleForm>
+        </content>
+    </Dialog>
+</core:FragmentDefinition>

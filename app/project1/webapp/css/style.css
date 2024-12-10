@@ -1,0 +1,15 @@
+/* Enter your custom styles here */
+
+.page {
+  background-image: url("../images/Cental_LibraryImG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .titleID {
+    background: linear-gradient(90deg, red, orange, rgb(43, 255, 0), green, blue, indigo, violet) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }

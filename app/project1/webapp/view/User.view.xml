@@ -1,0 +1,211 @@
+<mvc:View
+    controllerName="com.app.project1.controller.User"
+    xmlns:layout="sap.ui.layout"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns:f="sap.f"
+    xmlns:m="sap.m"
+    xmlns="sap.m"
+>
+    <f:DynamicPage
+        id="iduserpage"
+        headerExpanded="true"
+    >
+        <f:title>
+            <f:DynamicPageTitle
+                id="_IDGenDynamicPageUserTitle"
+                class="classdync"
+            >
+                <f:heading>
+                    <Title
+                        id="_IDGenuserTitle1"
+                        text="Central Library System"
+                    />
+                </f:heading>
+                <f:expandedContent>
+                    <Label
+                        id="Idusersubheadins"
+                        text="User Dashboard"
+                        class="blueText"
+                    />
+                </f:expandedContent>
+                <f:navigationActions>
+                    <Button
+                        id="idBtnuserDecline"
+                        text="Sign Out"
+                        type="Negative"
+                        icon="sap-icon://log"
+                        press="onpageclose"
+                    />
+                    <Button
+                        id="idBtnnotify"
+                        icon="sap-icon://bell-2"
+                        press="onpressnotify"
+                    />
+                </f:navigationActions>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:header>
+            <f:DynamicPageHeader
+                id="iduserDynamicPageHeader"
+                pinnable="true"
+                class="classuserpage"
+            >
+                <m:Label
+                    class="largeLabel"
+                    id="idlable"
+                    text="Hi {Username}, Welcome to The Central Library"
+                />
+                <HBox id="idhbox1">
+                    <VBox
+                        id="iduserFilterHLayout"
+                        alignContent="SpaceAround"
+                        width="100vw"
+                    >
+                        <m:Avatar
+                            id="idAvatar"
+                            src=""
+                            class="sapUiTinyMarginEnd"
+                            displaySize="L"
+                        />
+                    </VBox>
+
+                    <VBox
+                        id="idallbooks"
+                        class="uservboxcalss"
+                    >
+                        <m:HBox id="iduserhbox">
+                            <m:VBox
+                                id="iduservbox"
+                                class="classuservbox"
+                            >
+                                <m:Label
+                                    id="idusername"
+                                    text="User Name: {Username}"
+                                />
+                                <m:Label
+                                    id="idusermail"
+                                    text="Email: {email}"
+                                />
+                                <m:Label
+                                    id="iduserphno"
+                                    text="PH No:{phone_no}"
+                                />
+                            </m:VBox>
+                        </m:HBox>
+                    </VBox>
+                </HBox>
+
+                <Label
+                    id="iduseremailLabel"
+                    text=""
+                />
+                <FlexBox
+                    id="idflexbox"
+                    justifyContent="End"
+                >
+                    <Button
+                        class="classuserbtn"
+                        id="idusereremailValue"
+                        text="All Books"
+                        type="Emphasized"
+                        press="onPressallBooks"
+                    />
+                </FlexBox>
+            </f:DynamicPageHeader>
+        </f:header>
+        <f:content>
+            <Table
+                id="idUserborrowed"
+                alternateRowColors="true"
+                backgroundDesign="Transparent"
+                growing="true"
+                growingThreshold="5"
+                items="{loans}"
+                mode="MultiSelect"
+                class="classactiveloan"
+            >
+                <headerToolbar>
+                    <OverflowToolbar id="idBookTableHeader">
+                        <Title
+                            id="idTableHeaderTitle"
+                            text="Borrowed Books"
+                        />
+                        <ToolbarSpacer id="idTableHeaderSpacer1" />
+                    </OverflowToolbar>
+                </headerToolbar>
+                <columns>
+                    <Column id="idISBNColumn11">
+                        <Title
+                            id="idISBNtitle11"
+                            text="ISBN"
+                        />
+                    </Column>
+                    <Column id="idtitleColumn11">
+                        <Title
+                            id="idBooktitletitle11"
+                            text="Title"
+                        />
+                    </Column>
+                    <Column id="idBooksidColumn11">
+                        <Title
+                            id="idBooksidtitle11"
+                            text="Books_id"
+                        />
+                    </Column>
+
+                    <Column id="idIssueColumn11">
+                        <Title
+                            id="idIssuetitle11"
+                            text="Issue date"
+                        />
+                    </Column>
+                    <Column id="idDueDateColumn11">
+                        <Title
+                            id="idDuedatetitle11"
+                            text="Due Date"
+                        />
+                    </Column>
+                    <Column id="idReviewColumn12">
+                        <Title
+                            id="idDuedatetitle12"
+                            text="Review"
+                        />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem id="idColumnListBarrowedbooks">
+                        <cells>
+                            <Text
+                                id="idLoanIdvalue11"
+                                text="{books/ISBN}"
+                            />
+                            <Text
+                                id="idBOOKTILTEvalue11"
+                                text="{books/title}"
+                            />
+                            <Text
+                                id="idbooksIdvalue11"
+                                text="{books_ID}"
+                            />
+                            <Text
+                                id="idIssusedatevalue11"
+                                text="{issuseDate}"
+                            />
+                            <Text
+                                id="idduedatevalue11"
+                                text="{DueDate}"
+                            />
+                            <Button
+                                id="idreviewbut"
+                                text="Review"
+                                press="onReviewPress"
+                            />
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </f:content>
+    </f:DynamicPage>
+</mvc:View>

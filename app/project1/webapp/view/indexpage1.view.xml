@@ -1,0 +1,56 @@
+<mvc:View controllerName="com.app.project1.controller.indexpage1"
+
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:l="sap.ui.layout"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+    
+    <Page
+        id="_IDGenPage1"
+        class="page"
+    >
+        <headerContent>
+            <Title
+                id="_IDGenTitle1"
+                class="titleID sapMBarRight"
+                text="Artihcus Central Library"
+                
+            />
+              <Label id="erty" width="75%"/>
+            <Button
+                class="classregister"
+                id="_IDGenButton2"
+                text="Register"
+                type="Emphasized"
+                press="ongoregister"
+            />
+            <MenuButton
+                id="_IDGenMenuButton1"
+                text="Login"
+            >
+                <Menu id="_IDGenMenu1">
+                    <items>
+                        <MenuItem
+                            id="_IDGenMenuItem1"
+                            text="User Login"
+                            press="userloginbutton"
+                        />
+                        <MenuItem
+                            id="_IDGenMenuItem2"
+                            text="Admin Login"
+                            press="loginbutton"
+                        />
+                    </items>
+                </Menu>
+            </MenuButton>
+        </headerContent>
+       
+
+       
+
+    </Page>
+</mvc:View>
